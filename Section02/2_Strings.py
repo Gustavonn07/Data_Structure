@@ -11,3 +11,4 @@ print(principal_string.find('World'))
 print(principal_string[0:len(principal_string)//2 + 1])
 
 print(principal_string_notTrim.strip())
+
