@@ -25,13 +25,12 @@ class SetEnum(Enum):
     SYMMETRIC_DIFFERENCE = 4
 
 def get_set_type(enum: SetEnum):
-    types = {
+    return {
         SetEnum.INTERSSECTION: '&',
         SetEnum.UNION: '|',
         SetEnum.DIFFERENCE: '-',
         SetEnum.SYMMETRIC_DIFFERENCE: '^',
-    }
-    return types[enum]
+    }[enum]
 
 def get_group(enum: SetEnum):
     return eval(f"futebol {get_set_type(enum)} xadrez")
