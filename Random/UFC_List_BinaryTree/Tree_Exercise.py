@@ -56,8 +56,6 @@ class Tree:
 
         return None
 
-
-
 tree = Tree("Raiz")
 
 tree.insert("Raiz", Node("Filho 1"))
