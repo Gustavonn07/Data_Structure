@@ -1,5 +1,5 @@
-'''
-🛠️ Funções principais que uma árvore binária geralmente tem:
+"""
+    🛠️ Funções principais que uma árvore binária geralmente tem:
     Função __//__ O que faz:
 
     insert(value) __//__ Insere um valor na árvore ✅
@@ -11,7 +11,7 @@
     inorder() __//__ Percorre em ordem (esquerda → raiz → direita)
     preorder() __//__ Percorre em pré-ordem (raiz → esquerda → direita)
     postorder() __//__ Percorre em pós-ordem (esquerda → direita → raiz)
-'''
+"""
 
 
 
@@ -71,6 +71,9 @@ class BinaryTree:
         else:
            return self.__find_children(self._root, data)
 
+    def remove_children(self, data):
+        ...
+
     def __find_children(self, parent, data):
         if not parent:
             return False
@@ -80,7 +83,6 @@ class BinaryTree:
             return self.__find_children(parent.get_right_child(), data)
         else:
             return self.__find_children(parent.get_left_child(), data)
-
 
     def insert(self, node):
         if self.empty():
